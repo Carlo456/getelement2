@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>tagname</title>
+</head>
+<body>
+    <p>Ejemplo de parrafo</p>
+    <p name="mayusculas">Este es un ejemplo con mayusculas</p>
+    <input type="button" value="contar" onclick="contar()">
+    <input type="button" value="contar_mayusculas" onclick="contar_name()">
+    <input type="button">
+    <script>
+        function contar(){
+            var total = document.getElementsByTagName("p");
+            alert("El numero de parrafos seria: "+total.length);
+        }
+
+        function contar_name() {
+            var mayusculas = document.getElementsByName("mayusculas");
+            alert("Total de parrafos con mayusculas: "+mayusculas.lenght);
+        }
+    </script>
+</body>
+</html>
